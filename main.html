@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="icon" type="image/png" href="https://user-images.githubusercontent.com/101733478/186380558-fd4fa29c-3bb2-4c18-8d04-8410a95526b1.jpg">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<style type="text/css">
+.body {background: #F0F0F0;}
+
+.invi {
+	display: none;
+	visibility: hidden;
+}
+
+.textarea {
+	 padding: 5px;
+     font-size: 16px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+	 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+     color: #000000;
+     border-style: solid;
+     border-radius: 3px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+	 text-align: center;
+	 line-height: 1.4em;
+}
+
+
+.textarea:focus {
+	background: none repeat scroll 0 0 #FFFFFF;
+	display: inline;
+	outline-width: 0;
+}
+
+.h1 { color: #235ebc; font-family: 'Segoe UI', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0 0 5px; text-align: center; }
+
+.p { color: #4c4a37; font-family: 'Segoe UI', sans-serif; font-size: 18px; line-height: 32px; margin: auto; text-align: center; font-weight: bold;}
+
+.wrapper {
+	text-align: center;
+}
+/*  */
+/* .downloads a, .downloads span {
+    margin-left:10px;
+    text-decoration: none;
+    background:none;
+    font-size: 15px;
+    color: #000;
+}
+.downloads .button:hover {
+    box-shadow:none;
+    color: #ff4422;
+}
+.downloads {
+    height: 50px;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+	background-color: #ffffff;
+	border: none;
+    position: relative;
+    color: red;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.3s;
+    text-align: center;
+}
+.demobutton::before, .demobutton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+    border: 2px solid red;
+}
+.downloadbutton::before, .downloadbutton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+    border: 3px solid blue;
+}
+.button:hover::after {
+    animation-name: rotatecw;
+    animation-duration: 2s;
+}
+.button:hover::before {
+    animation-name: rotateccw;
+    animation-duration: 3s;
+}
+.button:hover::after, .button:hover::before {
+    left: 50px;
+    width: 50px;
+    background:none;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotatecw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes rotateccw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+} */
+/* End button download & demo */
+.button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 150px;
+  height: 50px;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  
+
+}
+
+.button2:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  position: relative;
+}
+
+.button2:hover::before, .button2:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.button2:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
+
+
+
+/*  */
+.snip1582 {
+  background-color: #c47135;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 16px;
+  line-height: 1em;
+  margin: 10px 10px;
+  outline: none;
+  padding: 10px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+ 
+}
+
+.snip1582:before,
+.snip1582:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+.snip1582:before {
+  border-color: #c47135;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.snip1582:after {
+  border-bottom-width: 2px;
+  border-color: #c47135;
+  bottom: -5px;
+  right: 0px;
+}
+
+.snip1582:hover,
+.snip1582.hover {
+  background-color: #c47135;
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.btn {
+	background-color: #555555;
+	border: none;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 5px;
+	color: white;
+	padding: 10px 20px 10px 20px;
+		text-align: center;
+		text-decoration: none;
+	display: inline-block;
+		font-size: 16px;
+		text-decoration: none;	
+}
+
+.btn:hover {
+	background: #201d7a;
+	text-decoration: none;
+}
+
+	
+.counter {
+	margin: 5px;
+	height: 20px;
+	width: 648px;
+	display: inline-block;
+	position: relative;
+}
+
+#bottom-right
+{
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.button1 {
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #1d9af2;
+    cursor: pointer;
+    background-color: #292d3e;
+    border: 1px solid #1d9af2;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button1:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes swing {
+    15% {
+        transform: translateX(5px);
+    }
+    
+    30% {
+        transform: translateX(-5px);
+    }
+    
+    50% {
+        transform: translateX(3px);
+    }
+    
+    65% {
+        transform: translateX(-3px);
+    }
+    
+    80% {
+        transform: translateX(2px);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+</style>
+
+<title>AVATAR GRABBER</title>
+
+</head>
+
+<body>
+<div class="h1">Bosch Avatar Grabber</div>
+
+<p class="p">Type in Bosch Email then press GRAB IT!</p>
+
+<div class="wrapper">
+<input id="textbox" size="30" class="textarea" spellcheck="false" onkeypress="return searchKeyPress(event);">
+<button type="button" id="grabbtn" class="button2" onclick="multiPic()">GRAB IT!</button>
+</div>
+
+<p></p>
+
+<div class="wrapper">
+<button type="button" class="snip1582" onclick="insertText()">Insert Sample</button>
+<button type="button" class="snip1582" onclick="clearAll()">Clear</button>
+<button type="button" class="snip1582" onclick="copyUrl()">Copy link</button>
+</div>
+
+
+<hr width="648px">
+
+<div class="wrapper" id="multi"></div>
+
+<div style="height: 30px;">
+<center><p id="loading" style="visibility: hidden;">Loading...</p></center>
+</div>
+
+<div style="height: 648px;">
+	<div><center><img id="bigpic" style="display:none;" onerror="imgError();"></center></div>
+</div>
+
+
+<script type='text/javascript'>
+
+function insertText(){
+	document.getElementById("textbox").value = "Yogi.XUE@cn.bosch.com";
+}
+
+function multiPic() {
+	var input = document.getElementById("textbox").value;
+	input = emailFormatter(input);
+	document.getElementById("textbox").value = input;
+	var emails = input.match(/[\.\w\-]*@[\.\w\-]*\.com/gi);
+	var src = document.getElementById("multi");
+	src.innerHTML = '';
+	for (var i in emails) {
+		console.log(emails[i]);
+		var img = document.createElement("img");
+		img.src = "https://rb-owa.apac.bosch.com/ews/exchange.asmx/s/GetUserPhoto?email=" + emails[i] + "&UA=0&size=HR648x648";
+		src.appendChild(img);
+	}
+	editUrl(emails)
+}
+
+function picture(){ 
+	var email = document.getElementById("textbox").value;
+	var regexEmail = new RegExp(/(\S+)@(\S*bosch\.com)/,'i');
+	// Add exception => not grabbing
+	if (email.match(/((tong\.vuuVan)|(trung\.lethien))@\S*bosch\.com/i)) {
+		console.log("lul");
+		document.getElementById('bigpic').style.display='none';
+		return;
+	}
+	
+	if (regexEmail.test(email)) {
+		var reg = email.match(regexEmail); //regex to check bosch email
+		var piclink = "https://rb-owa.apac.bosch.com/ews/exchange.asmx/s/GetUserPhoto?email=" + reg[1] + "%40" + reg [2] + "&UA=0&size=HR648x648";
+		document.getElementById('bigpic').src = piclink;
+		document.getElementById('loading').style.visibility='visible';
+		//document.getElementById('directlink').href=piclink;
+		editUrl(email);
+		// display image if successfully loaded
+		bigpic.onload = function() {
+			if (bigpic.naturalHeight){
+				document.getElementById('bigpic').style.display='block';
+				document.getElementById('loading').style.visibility='hidden';
+			}
+		}
+		return;
+	}
+	alert("Please enter valid Bosch Email, for example: abc@vn.bosch.com");
+}
+
+
+function searchKeyPress(e)
+{
+	// look for window.event in case event isn't passed in
+	e = e || window.event;
+	if (e.keyCode == 13)
+	{
+		document.getElementById('grabbtn').click();
+		return false;
+	}
+	return true;
+}
+
+function imgError() {
+	alert("Can't fetch avatar. Possible reason: you are not connected to Bosch internal network / Wrong email / Email does not have photo.");
+	document.getElementById('loading').style.visibility='hidden';
+}
+
+window.onload = function() {
+	var url = window.location.href;
+	url = url.replace(/%40/g,'@');
+	url = url.replace(/%2c/g,',');
+	//var reg = url.match(/(\.html*\?email=)(\S+@\S*bosch\.com)/i); //regex to check for argument
+	var reg = emailFormatter(url);
+	if (reg != '') {
+		document.getElementById("textbox").value = reg;
+		document.getElementById("textbox").focus();
+		// picture();
+		multiPic();
+	} else {
+		editUrl();
+	}
+}
+
+function emailFormatter(input) {
+	var reg = input.match(/[\.\w\-]*@[\.\w\-]*\.com/gi);
+	var emails = '';
+	if (reg != null) {
+		for (var i=0; i < reg.length; i++) {
+			emails = emails + reg[i] + ',';
+		}
+		return emails;
+	} else {
+		return '';
+	}
+	
+}
+
+function editUrl (email){
+	var regexHtml = new RegExp(/^.*\.html*/,'i');
+	if (email != null) {
+		if (history.pushState) {
+			window.history.pushState({}, email, '?email=' + email);
+		} else { // use this way if old browser, will reload the page
+			var url = window.location.href;
+			window.location.href = url.match(regexHtml) + '?email=' + email;
+		}
+	} else { // if email is null
+		if (history.pushState) {
+			var url = window.location.href.match(regexHtml);
+			window.history.pushState({}, email, url);
+		} else { // use this way if old browser, will reload the page
+			var url = window.location.href;
+			window.location.href = url.match(regexHtml);
+		}
+	}
+}
+
+function copyUrl() {
+	// if (document.getElementById('bigpic').style.display != 'block') {
+	// 	alert("Please grab avatar before copying");
+	// 	return;
+	// }
+	var textArea = document.createElement("textarea");
+	textArea.value = 'https://jackblk.github.io/other/ba.htm?email=' + document.getElementById("textbox").value;
+	document.body.appendChild(textArea);
+	textArea.select();
+	document.execCommand("Copy");
+	textArea.remove();
+}
+
+function clearAll() {
+	document.getElementById("textbox").value = "";
+	document.getElementById("multi").innerHTML = "";
+	document.getElementById('bigpic').style.display='none';
+	editUrl();
+}
+</script>
+
+
+<script>
+// tell the embed parent frame the height of the content
+if (window.parent && window.parent.parent){
+	window.parent.parent.postMessage(["resultsFrame", {
+height: document.body.getBoundingClientRect().height,
+slug: "gfqegg21"
+	}], "*")
+}
+</script>
+
+</body>
+
+</html>
